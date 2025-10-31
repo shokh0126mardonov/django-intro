@@ -1,23 +1,20 @@
-from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
-
-# home_wiew,home_about,home_contact,home_login,home_register,home_profile
+from .frontend import home,about,contact,profile
 
 def home_wiew(x):
     return HttpResponse(
-        'home page'
+        home
     )
 
 def home_about(x):
     return HttpResponse(
-        'home page'
+        about
     )
 
 def home_contact(x):
     return HttpResponse(
-        'home page'
+        contact
     )
 
 def home_login(x):
@@ -32,6 +29,6 @@ def home_register(x):
 
 def home_profile(x):
     return HttpResponse(
-        'home page'
+        profile
     )
 
